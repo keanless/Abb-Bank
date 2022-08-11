@@ -1,0 +1,48 @@
+.rangeslider {
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 450px;
+}
+
+.rangeslider__fill,
+.rangeslider__fill__bg {
+    background: #259aee !important;
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    will-change: width;
+    z-index: 2
+}
+.rangeslider__fill {
+    width: 494.2px !important;
+}
+
+.rangeslider__handle {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: url(../assets/imgs/range-handle.svg) 50% no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    top: calc(50% + 2px);
+    transform: translate(0, -50%) !important;
+    transition: width .1s ease-in-out, height .1s ease-in-out, top .1s ease-in-out;
+    width: 20px;
+    will-change: width, height, top;
+    z-index: 3
+}
+.rangeslider__fill__bg {
+    background: #ddd;
+    width: 100%
+}
+
+.rangeslider--disabled {
+    opacity: .4
+}
