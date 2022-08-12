@@ -3,7 +3,7 @@
     display: block;
     height: 25px;
     position: relative;
-    width: 450px;
+    width: 500px;
 }
 
 .rangeslider__fill,
@@ -16,9 +16,9 @@
     will-change: width;
     z-index: 2
 }
-.rangeslider__fill {
+/* .rangeslider__fill {
     width: 494.2px !important;
-}
+} */
 
 .rangeslider__handle {
     -webkit-font-smoothing: subpixel-antialiased;

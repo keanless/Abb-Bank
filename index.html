@@ -589,7 +589,6 @@
                 </div>
             </div>
         </div>
-
     </header>
 
 
@@ -732,49 +731,80 @@
     </div>
     <section class="credit-calculator">
         <a href="https://abb-bank.az/az/kredit-kalkulyatoru">Kredit Kalkulyatoru</a>
-        <div class="calculator-range-section">
-            <div class="calculator-range-1">
-                <div class="calculator-money">
-                    <span>Kredit məbləği</span>
-                    <div class="range-money-span">
-                        <span>AZN</span>
+        <div class="all-calculator">
+            <div class="calculator-range-section">
+                <div class="calculator-range-1">
+                    <div class="calculator-money">
+                        <span>Kredit məbləği</span>
+                        <div class="range-money-span">
+                            <span>AZN</span>
+                        </div>
                     </div>
+                    <div>
+                        <input type="range" min="1" max="30000" value="5000" step="1" id="range-slider-money"
+                            data-rangeslider-money>
+                        <input type="number" value="14" id="money-inp">
+                    </div>
+                    <label for="" class="max-min-money">
+                        <span class="minumum-money">1</span>
+                        <span class="maximumum-money">30000</span>
+                    </label>
                 </div>
-                <div>
-                    <input type="range" min="1" max="30000" value="5000" step="1" id="range-slider-money"
-                        data-rangeslider-money>
-                    <input type="number" value="14" id="money-inp">
-                </div>
-                <label for="">
-                    <span class="minumum-month">1</span>
-                    <span class="maximumum-month">30000</span>
-                </label>
-            </div>
-            <div class="calculator-range-2">
-                <input type="range" min="1" max="54" value="6" id="range-slider-month" data-rangeslider-month>
-                <input type="number" value="6" id="month-inp">
-                <span class="minumum-month">1 ay</span>
-                <span class="maximumum-month">54 ay</span>
-            </div>
-            <div class="calculator-range-3">
-                <input type="range" min="14" max="27" value="14" id="range-slider-percent" data-rangeslider-percent>
+                <div class="calculator-range-2">
+                    <div class="calculator-month">
+                        <span>Kredit müddəti</span>
+                        <div class="range-month-span">
+                            <span>ay</span>
+                        </div>
+                    </div>
+                    <input type="range" min="1" max="54" value="6" id="range-slider-month" data-rangeslider-month>
+                    <input type="number" value="6" id="month-inp">
+                    <label for="" class="max-min-month">
+                        <span class="minumum-month">1 ay</span>
+                        <span class="maximumum-month">54 ay</span>
+                    </label>
 
-                <span class="minumum-month">1 %</span>
-                <span class="maximumum-month">27 %</span>
+                </div>
+                <div class="calculator-range-3">
+                    <div class="calculator-percent">
+                        <span>Faiz dərəcəsi</span>
+                        <div class="range-percent-span">
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <input type="range" min="14" max="27" value="14" id="range-slider-percent" data-rangeslider-percent>
+                    <input type="number" value="14" id="percent-inp">
+                    <label for="" class="max-min-percent">
+                        <span class="minumum-month">1 %</span>
+                        <span class="maximumum-month">27 %</span>
+                    </label>
+                </div>
+            </div>
+            <div class="calculator-output">
+                <div class="monthly-payment-section">
+                    <span class="monthly-payment">867.69</span> <span class="manat">₼</span>
+                    <p>Aylıq ödəniş</p>
+                </div>
+                <div class="output-line"></div>
+                <div class="total-payment-section">
+                    <span class="total-payment">5206.14</span>
+                    <span class="manat">₼</span>
+                    <p>Ümumi məbləğ</p>
+                </div>
+                <div class="credit-btn-link">
+                    <a href="https://kredit.abb-bank.az/cash-loan?utm_source=abb-bank.az&utm_medium=loan-calc&utm_campaign=cash-loan">Kredit al</a>
+                </div>
             </div>
         </div>
-
-        <div class="calculator-output">
-            <div class="monthly-payment">
-
-            </div>
-            <div class="total-payment">
-
-            </div>
-        </div>
+        <p class="current-calc">İlkin hesablama</p>
     </section>
 
+    <!-- <section class="suggestions">
+        <h2>Təkliflərimiz</h2>
+        <div class="suggestion-cards">
 
+        </div>
+    </section> -->
     <script src="/js/rangeslider.js"></script>
     <script src="js/app.js"></script>
 </body>

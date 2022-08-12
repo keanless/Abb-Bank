@@ -1,11 +1,4 @@
-$(document).ready(function () {
-    $("body").click(
-        function (e) {
-            if (e.target.className !== "form_wrapper") {
-                $(".form_wrapper").hide();
-            }
-        }
-    );
+$(() =>   {
     /* Language Dropdown Menu */
     let open = false;
     $("#lang-button").on("click", () => {
@@ -265,7 +258,7 @@ $('#percent-inp').on('change input', function (e) {
     var value = $('#percent-inp', e.target.parentNode)[0].value;
     $($inputRange).val(value).change();
     console.log(value);
-    if ((value  >= 1 && value < 14 )|| value == "") {
+    if ((value >= 1 && value < 14) || value == "") {
         $("#range-slider-percent").val(0).change()
         $("#percent-inp").val(value)
     }

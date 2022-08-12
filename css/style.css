@@ -38,6 +38,7 @@ body {
 
 .navbar-section {
     position: fixed;
+    top: 0;
     background-color: #fff;
     width: 100%;
     z-index: 100;
@@ -900,28 +901,56 @@ header {
 
 /* Credits Calculator */
 .credit-calculator {
-    z-index: 2000;
     position: relative;
     top: 390px;
     width: 1000px;
     margin: 0 auto;
+    z-index: auto;
+    padding-bottom: 100px;   
 }
 
 .u-left {
     float: left;
 }
-
+.credit-btn-link {
+    margin-top: 100px;
+}
+.credit-btn-link a {
+    padding: 15px 35px !important; 
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    text-align: center;
+    transition: all .4s ease;
+    color: #fff!important;
+    background-color: #3b8ae0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.credit-btn-link a:hover {
+    background-color: #0056c1;
+}
+.current-calc {
+    font-size: 16px;
+    color: #7f7f7f !important;
+    font-weight: 300;
+}
 .credit-calculator a {
+    display: inline-block;
     font-weight: 600;
     font-size: 36px;
     color: #262626;
+    margin-bottom: 50px;
 }
 
 .calculator-range-1 label:nth-child(1) {
     display: inline-block;
-    
+
 }
-.calculator-range-1 input {
+
+
+.calculator-range-1 input,
+.calculator-range-2 input,
+.calculator-range-3 input   {
     outline: none;
     border: none;
     text-align: right;
@@ -941,24 +970,41 @@ header {
 .u-text-left {
     text-align: left;
 }
-.calculator-money {
+
+.calculator-money,
+.calculator-month,
+.calculator-percent {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid #262626;
     width: 490px;
     height: 70px;
-    border-color: #e4e4e4!important;
+    border-color: #e4e4e4 !important;
     border-radius: 5px;
 }
-.calculator-money span:nth-child(1) {
+
+.calculator-money span:nth-child(1) ,
+.calculator-month span:nth-child(1) ,
+.calculator-percent span:nth-child(1) {
     display: inline-block;
     font-size: 18px;
     font-weight: 300;
-    color: #666 ;
+    color: #666;
     margin-left: 20px;
 }
-#money-inp {
+
+
+#money-inp ,
+#percent-inp{
+    position: relative;
+    top: -73px;
+    right: -234px;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: #262626 !important;
+}
+#month-inp {
     position: relative;
     top: -73px;
     right: -230px;
@@ -966,21 +1012,81 @@ header {
     font-size: 18px !important;
     color: #262626 !important;
 }
+
 .rangeslider {
     top: -15px;
 }
 
 .range-money-span {
     margin-right: 20px;
-    
 }
-.range-money-span span {
+
+.range-month-span {
+    margin-right: 35px;
+}
+.range-percent-span {
+    margin-right: 40px;
+}
+.calculator-output {
+    margin-left: 80px;
+}
+
+
+.range-money-span span,
+.range-month-span span,
+.range-percent-span span {
     font-weight: 500 !important;
     font-size: 18px !important;
     color: #262626 !important;
 }
 
+.max-min-monwy span {
+    display: block;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 300;
+}
 
+.max-min-money ,
+.max-min-percent,
+.max-min-month {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 300;
+    width: 493px;
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: space-between;
+}
+.all-calculator  {
+    display: flex;
+}
+.monthly-payment-section p ,
+.total-payment-section p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+}
+.monthly-payment,
+.total-payment {
+    font-size: 40px;
+    font-weight: 600;
+    color: #262626;
+}
+.output-line {
+    border-color: #e4e4e4!important;
+    border-top: 1px solid #dedede;
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+}
+
+.manat {
+    font-size: 26px;
+    font-weight: 600;
+    color: #262626;
+    font-size: normal;
+}
 /* Responsive */
 
 
