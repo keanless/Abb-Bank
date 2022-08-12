@@ -1087,9 +1087,91 @@ header {
     color: #262626;
     font-size: normal;
 }
+/* Suggestions Section */
+.container-suggestions {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.suggestions {
+    position: relative;
+    top: 500px;
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+.suggestion-cards {
+    display: flex;
+}
+
+.suggestions h2 {
+    display: inline-block;
+    font-size: 36px;
+    color: #262626;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.suggestion-card-image {
+    margin:  0  !important;
+    padding: 0 !important;
+    background-color: #f3f1ec;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.suggestion-card-1 img {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    max-width: 100%;
+    width: 390px;
+    border-style: none;
+}
+ 
+.suggestion-card-1-content {
+    
+    width: 342px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 1.5rem;
+    position: relative;
+    top: -4px;
+    padding-top: 4px;
+    padding-bottom: 30px !important;
+}
+.suggestion-card-1-content h4 {
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+}
+
+.suggestion-card-1-content p {
+    color: #666;
+    font-weight: 300;
+    font-size: 15px;
+}
+.suggestion-card-1-content a {
+    color: #262626;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.suggestion-card-1-content-align {
+    margin-left: 15px;
+
+}
+.suggestion-card-1-content a::after {
+    background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
+    content: "";
+    height: inherit;
+    min-height: 16px;
+    padding-left: 18px;
+    transition: all .4s ease;
+}
+
+
+
+
 /* Responsive */
-
-
 @media only screen and (max-width: 576px) {
     .navbar-section {
         display: none;
