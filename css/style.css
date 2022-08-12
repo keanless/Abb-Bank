@@ -906,34 +906,39 @@ header {
     width: 1000px;
     margin: 0 auto;
     z-index: auto;
-    padding-bottom: 100px;   
+    padding-bottom: 100px;
 }
 
 .u-left {
     float: left;
 }
+
 .credit-btn-link {
     margin-top: 100px;
 }
+
 .credit-btn-link a {
-    padding: 15px 35px !important; 
+    padding: 15px 35px !important;
     font-size: 15px !important;
     font-weight: 300 !important;
     text-align: center;
     transition: all .4s ease;
-    color: #fff!important;
+    color: #fff !important;
     background-color: #3b8ae0;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .credit-btn-link a:hover {
     background-color: #0056c1;
 }
+
 .current-calc {
     font-size: 16px;
     color: #7f7f7f !important;
     font-weight: 300;
 }
+
 .credit-calculator a {
     display: inline-block;
     font-weight: 600;
@@ -950,7 +955,7 @@ header {
 
 .calculator-range-1 input,
 .calculator-range-2 input,
-.calculator-range-3 input   {
+.calculator-range-3 input {
     outline: none;
     border: none;
     text-align: right;
@@ -984,8 +989,8 @@ header {
     border-radius: 5px;
 }
 
-.calculator-money span:nth-child(1) ,
-.calculator-month span:nth-child(1) ,
+.calculator-money span:nth-child(1),
+.calculator-month span:nth-child(1),
 .calculator-percent span:nth-child(1) {
     display: inline-block;
     font-size: 18px;
@@ -995,8 +1000,8 @@ header {
 }
 
 
-#money-inp ,
-#percent-inp{
+#money-inp,
+#percent-inp {
     position: relative;
     top: -73px;
     right: -234px;
@@ -1004,6 +1009,7 @@ header {
     font-size: 18px !important;
     color: #262626 !important;
 }
+
 #month-inp {
     position: relative;
     top: -73px;
@@ -1024,9 +1030,11 @@ header {
 .range-month-span {
     margin-right: 35px;
 }
+
 .range-percent-span {
     margin-right: 40px;
 }
+
 .calculator-output {
     margin-left: 80px;
 }
@@ -1047,7 +1055,7 @@ header {
     font-weight: 300;
 }
 
-.max-min-money ,
+.max-min-money,
 .max-min-percent,
 .max-min-month {
     font-size: 14px;
@@ -1059,26 +1067,30 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.all-calculator  {
+
+.all-calculator {
     display: flex;
 }
-.monthly-payment-section p ,
-.total-payment-section p{
+
+.monthly-payment-section p,
+.total-payment-section p {
     font-size: 16px;
     font-weight: 500;
     color: #262626;
 }
+
 .monthly-payment,
 .total-payment {
     font-size: 40px;
     font-weight: 600;
     color: #262626;
 }
+
 .output-line {
-    border-color: #e4e4e4!important;
+    border-color: #e4e4e4 !important;
     border-top: 1px solid #dedede;
-    margin-bottom: 1.5rem!important;
-    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
 }
 
 .manat {
@@ -1087,6 +1099,7 @@ header {
     color: #262626;
     font-size: normal;
 }
+
 /* Suggestions Section */
 .container-suggestions {
     width: 1240px;
@@ -1099,6 +1112,7 @@ header {
     background-color: #f5f5f5;
     padding: 3rem 0;
 }
+
 .suggestion-cards {
     display: flex;
 }
@@ -1112,7 +1126,7 @@ header {
 }
 
 .suggestion-card-image {
-    margin:  0  !important;
+    margin: 0 !important;
     padding: 0 !important;
     background-color: #f3f1ec;
     /* display: flex;
@@ -1127,9 +1141,9 @@ header {
     width: 390px;
     border-style: none;
 }
- 
+
 .suggestion-card-1-content {
-    
+
     width: 342px;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
@@ -1139,6 +1153,7 @@ header {
     padding-top: 4px;
     padding-bottom: 30px !important;
 }
+
 .suggestion-card-1-content h4 {
     font-size: 20px;
     color: #262626;
@@ -1150,15 +1165,18 @@ header {
     font-weight: 300;
     font-size: 15px;
 }
+
 .suggestion-card-1-content a {
     color: #262626;
     display: inline-block;
     padding-bottom: 10px;
 }
+
 .suggestion-card-1-content-align {
     margin-left: 15px;
 
 }
+
 .suggestion-card-1-content a::after {
     background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
     content: "";
@@ -1169,8 +1187,155 @@ header {
 }
 
 
+/* Currency Section */
+
+.currency-section {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: auto;
+    top: 500px;
+}
+.currency-flex {
+    display: flex;
+}
+.currency-convertor h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.currency-container {
+    width: 1030px;
+    margin: 0 auto;
+}
+.currency-section h3 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+.up {
+    position: relative;
+    right: 75px;
+    top: -10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    background-image: url(../assets/icons/up.svg);
+    height: 8px;
+    width: 8px;
+}
+.currency-data tr {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.currency-names {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.currency-usd-value,
+.currency-eur-value {
+    margin-bottom: 40px;
+}
+.currency-names span{
+    margin-right: 150px;
+}
+
+.currency-usd-value span,
+.currency-eur-value span,
+.currency-rub-value span {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.currency {
+    font-size: 36px !important;
+    font-weight: 600 !important;
+}
+
+.currency-convertor input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #666;
+}
 
 
+.currency-sell,
+.currency-buy {
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #e4e4e4!important;
+    padding: 1rem!important;
+    padding-right: 170px !important;
+}
+.convertor-currency {
+    position: relative;
+    right: -130px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    user-select: none;
+    font-weight: 300;
+}
+.currency-sell {
+    margin-bottom: 20px;
+}
+.currency-convertor {
+    position: relative;
+    top: -34px;
+    right: -54px;
+}
+
+.seperator {
+    border-left: 2px solid #e4e4e4;
+    display: inline-flex;
+    height: 28px;
+    position: relative;
+    right: -117px;
+    top: 0;
+}
+.currency-bottom {
+    padding-top: 35px;
+}
+
+.currency-bottom  span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    padding-right: 127px;
+}
+.currency-bottom a {
+    font-size: 15px;
+    color: #262626 !important;
+    font-weight: 500;
+}
+.currency-data {
+    padding-bottom: 25px;
+}
+.currency-data::after {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    position: relative;
+    top: 45px;
+    background-color: #e4e4e4;
+    display:block;
+}
+
+.currency-bottom a::after {
+    background-position: right 4px;
+    background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
+    content: "";
+    height: inherit;
+    min-height: 16px;
+    padding-left: 18px;
+    transition: all .4s ease;
+}
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {
