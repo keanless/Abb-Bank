@@ -1196,9 +1196,11 @@ header {
     z-index: auto;
     top: 500px;
 }
+
 .currency-flex {
     display: flex;
 }
+
 .currency-convertor h4 {
     font-size: 24px;
     font-weight: 500;
@@ -1209,11 +1211,13 @@ header {
     width: 1030px;
     margin: 0 auto;
 }
+
 .currency-section h3 {
     font-weight: 600;
     font-size: 36px;
     margin-bottom: 70px;
 }
+
 .up {
     position: relative;
     right: 75px;
@@ -1226,6 +1230,7 @@ header {
     height: 8px;
     width: 8px;
 }
+
 .currency-data tr {
     font-size: 16px;
     text-align: left;
@@ -1237,11 +1242,13 @@ header {
     font-weight: 400;
     margin-bottom: 60px;
 }
+
 .currency-usd-value,
 .currency-eur-value {
     margin-bottom: 40px;
 }
-.currency-names span{
+
+.currency-names span {
     margin-right: 150px;
 }
 
@@ -1269,10 +1276,11 @@ header {
 .currency-buy {
     border-radius: 5px;
     border: 1px solid;
-    border-color: #e4e4e4!important;
-    padding: 1rem!important;
+    border-color: #e4e4e4 !important;
+    padding: 1rem !important;
     padding-right: 170px !important;
 }
+
 .convertor-currency {
     position: relative;
     right: -130px;
@@ -1282,9 +1290,11 @@ header {
     user-select: none;
     font-weight: 300;
 }
+
 .currency-sell {
     margin-bottom: 20px;
 }
+
 .currency-convertor {
     position: relative;
     top: -34px;
@@ -1297,26 +1307,30 @@ header {
     height: 28px;
     position: relative;
     right: -117px;
-    top: 0;
+    top: 7px;
 }
+
 .currency-bottom {
     padding-top: 35px;
 }
 
-.currency-bottom  span{
+.currency-bottom span {
     font-size: 16px;
     font-weight: 500;
     color: #666;
     padding-right: 127px;
 }
+
 .currency-bottom a {
     font-size: 15px;
     color: #262626 !important;
     font-weight: 500;
 }
+
 .currency-data {
     padding-bottom: 25px;
 }
+
 .currency-data::after {
     content: "";
     width: 100%;
@@ -1324,7 +1338,7 @@ header {
     position: relative;
     top: 45px;
     background-color: #e4e4e4;
-    display:block;
+    display: block;
 }
 
 .currency-bottom a::after {
@@ -1336,6 +1350,142 @@ header {
     padding-left: 18px;
     transition: all .4s ease;
 }
+
+/*Banners Section */
+.banners-section {
+    position: relative;
+    top: 500px;
+    z-index: auto;
+}
+
+.banners-container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.banners-flex {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.banner-1 {
+    background: linear-gradient(90deg, #28B3F0 9.88%, #0A95D2 92.09%);
+    height: 370px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    width: 647px;
+    margin-right: 22px;
+}
+
+.banner-1::before {
+    left: -90vw;
+    width: 100vw;
+    content: "";
+    display: block;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: #28b3f0;
+}
+
+.banner-1-content {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.banner-1-image {
+    position: relative;
+    bottom: -56px;
+
+}
+
+.banner-1-content h4 {
+    padding-top: 20px;
+    width: 85%;
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-1-link,
+.banner-2-link {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3.5rem;
+
+}
+
+.banner-1-link a {
+    color: #fff;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.banner-1-link a::after,
+.banner-2-link a::after {
+    background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
+    content: "";
+    height: inherit;
+    min-height: 16px;
+    padding-left: 18px;
+    filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+    transition: all .4s ease;
+}
+
+.banner-1-image img {
+    max-width: 100%;
+}
+
+
+/* Banner 2 */
+
+.banner-2 {
+    background: linear-gradient(90deg, #6C96EA 9.88%, #4A76D2 92.09%);
+    height: 370px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    width: 755px;
+}
+
+.banner-2-content {
+    flex: 0 0 58.333333%;
+    max-width: 55.333333%;
+}
+
+.banner-2-content h4 {
+    padding-top: 20px;
+    width: 80%;
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-2-link a {
+    color: #fff;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.banner-2-image {
+    position: relative;
+    bottom: -25px;
+    left: -103px;
+    height: 345px;
+    overflow: hidden;
+}
+
+.banner-2-image img {
+    max-width: 100%;
+}
+
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {
