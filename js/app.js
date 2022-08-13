@@ -1,4 +1,4 @@
-$(() =>   {
+$(() => {
     /* Language Dropdown Menu */
     let open = false;
     $("#lang-button").on("click", () => {
@@ -141,6 +141,12 @@ $(() =>   {
 });
 
 
+/* Convertor */
+$("#sell").on("change input", function () {
+    $("#buy").val(
+        (($("#sell").val()) * 1.6970).toFixed(4)
+    )
+});
 
 
 

@@ -1307,7 +1307,7 @@ header {
     display: inline-flex;
     height: 28px;
     position: relative;
-    right: -117px;
+    right: -99px;
     top: 7px;
 }
 
@@ -1414,12 +1414,13 @@ header {
     color: #fff;
 }
 
-.banner-1-link,
-.banner-2-link {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 3.5rem;
-
+.banner-1-link{
+    position: relative;
+    bottom: -114px;
+}
+.banner-2-link  {
+    position: relative;
+    bottom: -149px;
 }
 
 .banner-1-link a {
