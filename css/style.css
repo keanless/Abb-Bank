@@ -1111,6 +1111,7 @@ header {
     top: 500px;
     background-color: #f5f5f5;
     padding: 3rem 0;
+    padding-bottom: 120px;
 }
 
 .suggestion-cards {
@@ -1556,7 +1557,9 @@ header {
     z-index: auto;
     top: 500px;
     padding-bottom: 50px;
+    border-bottom: 1px solid #e4e4e4;
 }
+
 .partner {
     border-radius: 10px;
     background-image: url(../assets/imgs/partner_banner.png);
@@ -1564,19 +1567,21 @@ header {
     width: 100%;
     height: 260px;
 }
+
 .partner-container {
     width: 1265px;
     margin: 0 auto;
 }
 
-.partner p{
+.partner p {
     padding-left: 20px;
     font-size: 36px;
     color: #fff;
     font-weight: 600;
     padding-top: 20px;
 }
-.partner-link  {
+
+.partner-link {
     position: relative;
     bottom: -30px;
     left: 80px;
@@ -1586,10 +1591,12 @@ header {
     font-size: 16px;
     color: #fff;
 }
+
 .partner p {
     padding-top: 70px;
     padding-left: 80px;
 }
+
 .partner-link a::after {
     background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
     content: "";
@@ -1599,6 +1606,157 @@ header {
     filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
     transition: all .4s ease;
 }
+
+/* Footer Section */
+.footer-container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.section-footer {
+    padding-top: 20px;
+    position: relative;
+    top: 500px;
+    z-index: auto;
+}
+
+.footer-top {
+    padding: 15px 0;
+    position: relative;
+    top: 500px;
+    z-index: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h4 {
+    font-weight: 600;
+}
+.footer-top-logo img {
+    height: 35px;
+}
+
+.section-footer {
+    background-color: #f9f9f9;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer span {
+    display: block;
+    margin-bottom: 1rem;
+}
+.footer span a{
+    font-size: 15px;
+    display: flex !important;
+    color: #666 !important;
+    line-height: 21px !important;
+    font-weight: 300 ;
+}
+ 
+.footer-phone-span {
+  display: inline !important;
+  font-size: 18px !important;
+  color: #262626 !important;  
+}
+.footer-phone a svg {
+    color: #262626 ; 
+}
+ .phone-logo {
+    margin-right: 10px;
+    height: 12px;
+    width: 12px;
+    background-image: url(../assets/imgs/phone-262626.svg   );
+ }
+ .ferdi {
+    margin-right: 50px;
+ }
+ .footer a:hover {
+    text-decoration: underline;
+ }
+ .app-links {
+    display: flex;
+    padding: 20px 0;
+ }
+    /* Footer App */
+
+
+ .iphone-logo {
+    background-image: url(../assets/icons/app-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+ }
+ .android-logo {
+    background-image: url(../assets/icons/play-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+
+ }
+ .huawei-logo {
+    background-image: url(../assets/icons/huawei.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+
+ }
+.iphone-content span,
+.android-content span,
+.huawei-content span {
+    display: block;
+}
+ .app-span {
+    font-size: 9px;
+    font-weight: 500;
+    color: #666;
+ }
+ .app-span-2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+ }
+
+ .iphone-app ,
+ .android-app,
+ .huawei-app{
+    border-radius: 6px;
+    background-color: #ececec;
+    padding: 1rem;
+    display: flex;
+ }
+
+/* Footer Bottom */
+
+.footer-bottom {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright span {
+    font-size: 14px;
+    opacity: .5;
+    font-weight: 300;
+    color: #262626;
+}
+
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {
