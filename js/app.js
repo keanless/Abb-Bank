@@ -16,29 +16,41 @@ $(() => {
         open = !open;
     });
     /* Search Button */
-
-    $("#search-btn").on("click", () => {
-        $("#search-bar-section").fadeOut(200);
-        $("#search-span").css({
-            color: "#666",
-        });
-        $("#search-svg").css({
-            color: "#666",
-        });
-        $("#lang-content").hide();
-        $("#lang-icon").addClass("fa fa-angle-down").removeClass("open");
-    });
+    let openSearch = true;
     $("#navbar-search").on("click", () => {
-        $("#lang-content").hide();
-        $("#lang-icon").addClass("fa fa-angle-down").removeClass("open");
+        if (openSearch) {
+            $("#search-bar-section").fadeIn("fast");
+            $("#search-span").css({
+                color: "#0056c1",
+            });
+            $(".bi-search").css({
+                color: "#0056c1"
+            })
+
+        } else {
+            $("#search-span").css({
+                color: "#666",
+            });
+            $(".bi-search").css({
+                color: "#666"
+            })
+            $("#search-bar-section").fadeOut();
+
+        }
+        openSearch = !openSearch
+    })
+
+    $(".search-bar-icon").on("click", () => {
+        $("#search-bar-section").fadeOut(100);
         $("#search-span").css({
-            color: "#0056c1",
+            color: "#666",
         });
-        $("#search-svg").css({
-            color: "#0056c1",
-        });
-        $("#search-bar-section").fadeToggle(100);
+        $(".bi-search").css({
+            color: "#666"
+        })
     });
+
+
 
     /* Navbar Hover */
 
@@ -279,4 +291,22 @@ $("#hamburger-btn").on("click", () => {
     }
     openHam = !openHam;
 
+});
+
+
+/* Footer lang */
+let openFooter = false;
+$("#footer-lang-button").on("click", () => {
+    if (openFooter) {
+        $("#footer-lang-icon").addClass("fa fa-angle-down").removeClass("open");
+        $("#footer-lang-content").css({
+            display: "none",
+        });
+    } else {
+        $("#footer-lang-icon").addClass("fa fa-angle-down open");
+        $("#footer-lang-content").css({
+            display: "block",
+        });
+    }
+    openFooter = !openFooter;
 });

@@ -1414,11 +1414,12 @@ header {
     color: #fff;
 }
 
-.banner-1-link{
+.banner-1-link {
     position: relative;
     bottom: -114px;
 }
-.banner-2-link  {
+
+.banner-2-link {
     position: relative;
     bottom: -149px;
 }
@@ -1630,9 +1631,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .footer h4 {
     font-weight: 600;
 }
+
 .footer-top-logo img {
     height: 35px;
 }
@@ -1640,50 +1643,63 @@ header {
 .section-footer {
     background-color: #f9f9f9;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
 }
+
 .footer span {
     display: block;
     margin-bottom: 1rem;
 }
-.footer span a{
+
+.footer span a {
     font-size: 15px;
     display: flex !important;
     color: #666 !important;
     line-height: 21px !important;
-    font-weight: 300 ;
+    font-weight: 300;
 }
- 
+
 .footer-phone-span {
-  display: inline !important;
-  font-size: 18px !important;
-  color: #262626 !important;  
+    display: inline !important;
+    font-size: 18px !important;
+    color: #262626 !important;
 }
+
 .footer-phone a svg {
-    color: #262626 ; 
+    color: #262626;
 }
- .phone-logo {
+
+.phone-logo {
     margin-right: 10px;
     height: 12px;
     width: 12px;
     background-image: url(../assets/imgs/phone-262626.svg   );
- }
- .ferdi {
+}
+
+.ferdi {
     margin-right: 50px;
- }
- .footer a:hover {
+}
+
+.footer a:hover {
     text-decoration: underline;
- }
- .app-links {
+}
+
+.footer-phone-link:hover {
+    text-decoration: none !important;
+}
+
+.app-links {
     display: flex;
     padding: 20px 0;
- }
-    /* Footer App */
+}
+
+/* Footer App */
 
 
- .iphone-logo {
+.iphone-logo {
     background-image: url(../assets/icons/app-store.svg);
     filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
     height: 24px;
@@ -1693,8 +1709,9 @@ header {
     background-size: contain;
     display: inline-block;
     margin-right: 10px;
- }
- .android-logo {
+}
+
+.android-logo {
     background-image: url(../assets/icons/play-store.svg);
     filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
     height: 24px;
@@ -1705,8 +1722,9 @@ header {
     display: inline-block;
     margin-right: 10px;
 
- }
- .huawei-logo {
+}
+
+.huawei-logo {
     background-image: url(../assets/icons/huawei.svg);
     filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
     height: 24px;
@@ -1717,31 +1735,34 @@ header {
     display: inline-block;
     margin-right: 10px;
 
- }
+}
+
 .iphone-content span,
 .android-content span,
 .huawei-content span {
     display: block;
 }
- .app-span {
+
+.app-span {
     font-size: 9px;
     font-weight: 500;
     color: #666;
- }
- .app-span-2 {
+}
+
+.app-span-2 {
     font-size: 14px;
     font-weight: 500;
     color: #666;
- }
+}
 
- .iphone-app ,
- .android-app,
- .huawei-app{
+.iphone-app,
+.android-app,
+.huawei-app {
     border-radius: 6px;
     background-color: #ececec;
     padding: 1rem;
     display: flex;
- }
+}
 
 /* Footer Bottom */
 
@@ -1751,6 +1772,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .copyright span {
     font-size: 14px;
     opacity: .5;
@@ -1758,6 +1780,53 @@ header {
     color: #262626;
 }
 
+
+ 
+.footer-logos a {
+    margin-right: 10px;
+}
+.instagram {
+    background-image: url(https://abb-bank.az/img/icons/ig.svg);
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.footer-socials {
+    display: flex;
+    align-items: center;
+}
+.footer-social-logos {
+    display: flex;
+}
+.footer-social-logos a {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+/* Footer Lang */
+.footer-lang-content {
+    width: 155px;
+    height: 105px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 0 17px 0 #a19ba1;
+    position: absolute;
+    bottom: 33px;
+    right: -2px;
+    user-select: none;
+    z-index: 201;
+}
+
+ 
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {

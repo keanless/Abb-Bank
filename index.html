@@ -113,7 +113,7 @@
                         <h4 class="ac-header">
                             <button type="button" class="ac-trigger" id="btn-acc-credits">Kreditler
                             </button>
-                            <i id="lang-icon" class="fa-solid icon-credits fa-angle-down"></i>
+                            <i id="lang-icon-kredit" class="fa-solid icon-credits fa-angle-down"></i>
                         </h4>
                         <div class="ac-panel" id="credits-acc-open" style="display: none;">
                             <a class="ac-text" href="#">İpoteka krediti</a>
@@ -125,7 +125,7 @@
                         <h4 class="ac-header">
                             <button type="button" class="ac-trigger icon-credits"
                                 id="btn-acc-emanets">Əmanətlər</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-account" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="emanets-acc-open" style="display: none;">
                             <a class="ac-text" href="#"> Əmanətli ipoteka krediti</a>
@@ -137,7 +137,7 @@
                     <div class="ac">
                         <h4 class="ac-header">
                             <button type="button" id="btn-acc-cards" class="ac-trigger">Kartlar</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-cards" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="cards-acc-open" style="display: none;">
                             <a class="ac-text" href="#">Azercell Co-Brand kartı</a>
@@ -151,7 +151,7 @@
                     <div class="ac">
                         <h4 class="ac-header">
                             <button type="button" id="btn-acc-money" class="ac-trigger">Pul köçürmələri</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-money" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="money-acc-open" style="display: none;">
                             <a class="ac-text" href="#">Valyuta tənzimlənməsi</a>
@@ -162,7 +162,7 @@
                     <div class="ac">
                         <h4 class="ac-header">
                             <button type="button" id="btn-acc-current" class="ac-trigger">Cari hesab</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-current" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="current-acc-open" style="display: none;">
                             <a class="ac-text" href="#">Kassa əməliyyatları</a>
@@ -175,7 +175,7 @@
                     <div class="ac">
                         <h4 class="ac-header">
                             <button type="button" id="btn-acc-electron" class="ac-trigger">Elektron xidmətlər</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-electron" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="electron-acc-open" style="display: none;">
                             <a class="ac-text" href="#">NFC ödənişi</a>
@@ -193,7 +193,7 @@
                     <div class="ac">
                         <h4 class="ac-header">
                             <button type="button" id="btn-acc-bank" class="ac-trigger">Bank 24/7</button>
-                            <i id="lang-icon" class="fa-solid fa-angle-down icon-credits"></i>
+                            <i id="lang-icon-bank" class="fa-solid fa-angle-down icon-credits"></i>
                         </h4>
                         <div class="ac-panel" id="bank-acc-open" style="display: none;">
                             <a class="ac-text" href="#">Azercell Co-Brand kartı</a>
@@ -1088,7 +1088,7 @@
                     <span><a href="tel:0124930091">Tel: (+994 12) 493 40 91</a></span>
                     <span><a href="fax:0124934091">Faks: (+994 12) 493 40 91</a></span>
                     <span><a href="mailto:info@abb-bank.az">E-poçt: info@abb-bankaz<a></span>
-                    <span class="footer-phone"><a href="tel:937" style="display: flex;">
+                    <span class="footer-phone"><a href="tel:937" class="footer-phone-link" style="display: flex;">
                             <div>
                                 <span class="phone-logo"></span>
                             </div>
@@ -1143,20 +1143,24 @@
                 </div>
                 <div class="footer-socials">
                     <div class="footer-social-logos">
-                        <a href=""></a>
+                        <a href=""> <span class="instagram"></span></a>
+                        <a href=""> <span class="instagram"></span></a>
+                        <a href=""> <span class="instagram"></span></a>
+                        <a href=""> <span class="instagram"></span></a>
+                        <a href=""> <span class="instagram"></span></a>
                     </div>
                     <div class="footer-lang">
                         <div class="navbar-lang">
                             <div class="lang">
-                                <div class="lang-button" id="lang-button">
+                                <div class="lang-button" id="footer-lang-button">
                                     <span>AZ</span>
-                                    <i id="lang-icon" class="fa-solid fa-angle-down"></i>
+                                    <i id="footer-lang-icon" class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div class="lang-content" id="lang-content" style="display:none">
+                            <div class="footer-lang-content" id="footer-lang-content" style="display:none">
                                 <div class="en-flag">
                                     <img width="25px"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/ Flag_of_the_United_Kingdom_%283-5%29.svg/256px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" />
+                                        src="https://abb-bank.az/img/icons/flag-uk.svg" />
                                     <span>EN</span>
                                 </div>
                                 <div class="ru-flag">
