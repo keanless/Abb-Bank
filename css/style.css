@@ -1355,6 +1355,7 @@ header {
 .banners-section {
     position: relative;
     top: 500px;
+    padding-bottom: 120px;
     z-index: auto;
 }
 
@@ -1486,6 +1487,118 @@ header {
     max-width: 100%;
 }
 
+/* News Section */
+
+
+.news-section {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: auto;
+    top: 500px;
+}
+
+.news-container {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.news a {
+    transition: all .4s ease;
+}
+
+.news h4 {
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #262626;
+    transition: all .4s ease;
+    padding-bottom: 90px;
+}
+
+.new-card-1 {
+    height: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    transition: all .4s ease;
+}
+
+.new-card-1 p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+
+}
+
+
+.new-card-1:hover .new-card-1 h4,
+.new-card-1:hover h4 {
+    color: #3b8ae0;
+}
+
+.new-card-1 h4:hover .new-card-1,
+.new-card-1:hover {
+    border-bottom: 1px solid #3b8ae0;
+
+}
+
+/* Partner Section */
+.partner-section {
+    position: relative;
+    z-index: auto;
+    top: 500px;
+    padding-bottom: 50px;
+}
+.partner {
+    border-radius: 10px;
+    background-image: url(../assets/imgs/partner_banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 260px;
+}
+.partner-container {
+    width: 1265px;
+    margin: 0 auto;
+}
+
+.partner p{
+    padding-left: 20px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.partner-link  {
+    position: relative;
+    bottom: -30px;
+    left: 80px;
+}
+
+.partner a {
+    font-size: 16px;
+    color: #fff;
+}
+.partner p {
+    padding-top: 70px;
+    padding-left: 80px;
+}
+.partner-link a::after {
+    background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
+    content: "";
+    height: inherit;
+    min-height: 16px;
+    padding-left: 18px;
+    filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+    transition: all .4s ease;
+}
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {
