@@ -282,12 +282,16 @@ $('#percent-inp').on('change input', function (e) {
     }
 });
 
-let openHam = false;
+let openHam = true;
 $("#hamburger-btn").on("click", () => {
     if (openHam) {
         $("#hamburger-btn").addClass("is-active")
+        $(".navbar-hamburger-menu").addClass("navbar-hamburger-menu-active")
+        // $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu")
     } else {
         $("#hamburger-btn").removeClass("is-active")
+        $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu-active")
+
     }
     openHam = !openHam;
 

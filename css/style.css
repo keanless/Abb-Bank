@@ -5,10 +5,10 @@
 
 html,
 body {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: "SF Pro Display", sans-serif !important;
 }
 
-.container {
+.container-navbar {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -1144,13 +1144,12 @@ header {
 }
 
 .suggestion-card-1-content {
-
     width: 342px;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
     padding: 1.5rem;
     position: relative;
-    top: -4px;
+    top: -7px;
     padding-top: 4px;
     padding-bottom: 30px !important;
 }
@@ -1781,10 +1780,11 @@ header {
 }
 
 
- 
+
 .footer-logos a {
     margin-right: 10px;
 }
+
 .instagram {
     background-image: url(https://abb-bank.az/img/icons/ig.svg);
     height: 16px;
@@ -1794,13 +1794,16 @@ header {
     background-size: contain;
     display: inline-block;
 }
+
 .footer-socials {
     display: flex;
     align-items: center;
 }
+
 .footer-social-logos {
     display: flex;
 }
+
 .footer-social-logos a {
     height: 30px;
     width: 30px;
@@ -1826,7 +1829,7 @@ header {
     z-index: 201;
 }
 
- 
+
 /* Responsive */
 @media only screen and (max-width: 576px) {
     .navbar-section {
@@ -2024,11 +2027,123 @@ header {
         width: 24px;
     }
 
-    .ac-open {
-        display: none;
+    /* Hamburger Section */
+
+    .navbar-hamburger-menu {
+        display: none !important;
+        width: 100vw;
+        height: calc(100% - 126px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 100px;
+        /* position: fixed; */
+        background-color: #fff;
+        z-index: auto !important;
+        left: 400px !important;
+        transition: all 1s !important;
     }
 
+    .navbar-hamburger-menu-active {
+        display: none !important;
+        padding-bottom: 20px;
+        transition: all 1s !important;
+        left: 0 !important;
+        z-index: 99999 !important;
+    }
 
+    .accordion-button {
+        padding: 0 !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        color: #262626 !important;
+        padding: 0.5rem 1rem !important;
+        /* padding-left: 1.5rem !important; */
+    }
 
+    .accordion-button:not(.collapsed) {
+        color: #262626 !important;
+    }
 
+    .accordion-button:not(.collapsed):after {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E") !important;
+    }
+
+    .accordion-body a {
+        display: block !important;
+        font-size: 16px;
+        color: #262626;
+        font-weight: 300;
+    }
+
+    .accordion-button:not(.collapsed) {
+        box-shadow: inherit !important;
+    }
+
+    .remove-arrow::after {
+        background-image: none !important;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 40px !important;
+        height: 4px !important;
+    }
+
+    /* Calculator Section */
+    .all-calculator {
+        display: inherit;
+    }
+
+    .calculator-output {
+        margin: 0;
+        display: flex;
+    }
+
+    .calculator-money,
+    .calculator-month,
+    .calculator-percent {
+        width: 300px;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    #money-inp,
+    #percent-inp {
+        top: -70px;
+        width: 70px;
+        right: -186px;
+    }
+
+    #month-inp {
+        width: 30px;
+        top: -68px;
+        right: -225px;
+    }
+
+    .rangeslider__fill,
+    .rangeslider__fill__bg {
+        width: 333.902px !important;
+    }
+
+    /* .rangeslider__handle {
+        left: 315px !important;
+    } */
+
+    .rangeslider {
+        width: 345px !important;
+    }
+
+    .credit-calculator {
+        padding-left: 10px;
+        top: 0;
+        position: relative;
+        width: 100% !important;
+    }
+
+    .max-min-money,
+    .max-min-percent,
+    .max-min-month {
+        width: 100%;
+    }
 }
