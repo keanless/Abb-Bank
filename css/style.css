@@ -2134,7 +2134,7 @@ header {
     .credit-calculator {
         top: 0;
         position: relative;
-        width: 100% !important;
+        width: 95% !important;
     }
 
     .calculator-output {
@@ -2186,7 +2186,7 @@ header {
     }
 
     .current-calc {
-       margin-left: 20px;
+        margin-left: 20px;
     }
 
     .max-min-money,
@@ -2204,7 +2204,7 @@ header {
 
     /* Suggestions */
     .container-suggestions {
-        width: 90%;
+        width: 81%;
         margin: 0 auto;
     }
 
@@ -2213,6 +2213,7 @@ header {
         text-align: left;
         flex-direction: column;
     }
+
     .suggestion-card-1 {
         margin-bottom: 20px;
     }
@@ -2221,32 +2222,111 @@ header {
         width: 315.5px;
         max-width: inherit !important;
     }
+
     .suggestions h2 {
         margin-left: 20px;
         font-size: 22px;
     }
+
     .suggestions {
         position: initial;
         top: 0;
-        
+
     }
+
     .suggestion-card-1-content p {
         font-size: 13px;
         line-height: 18px;
     }
+
     .suggestion-card-1-content {
         padding: 0;
         width: 100%;
     }
+
     .suggestion-card-1-content {
         top: -32px;
         padding: 1px;
         width: 313px;
     }
+
     .suggestion-card-1-content h4 {
         font-size: 18px;
     }
+
     .suggestion-card-1-content a {
         font-size: 13px;
+    }
+
+
+    .currency-section {
+        position: initial;
+        padding: 0;
+    }
+
+    .currency-container {
+        width: 92%;
+    }
+
+    .currency-flex {
+        display: block;
+    }
+
+    .currency-bottom {
+        display: none;
+    }
+
+    .currency-convertor {
+        position: initial;
+    }
+
+    .currency-names span {
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .currency-names span:nth-child(2) {
+        margin-right: 81px;
+    }
+
+    .currency-names span:nth-child(1) {
+        margin-right: 74px;
+    }
+
+    .currency-usd-value span:nth-child(1),
+    .currency-eur-value span:nth-child(1),
+    .currency-rub-value span:nth-child(1) {
+        margin: 0 !important;
+        font-size: 35px !important;
+        font-weight: 900 !important;
+        margin-right: 50px !important;
+    }
+
+    .currency-usd-value span:nth-child(2),
+    .currency-eur-value span:nth-child(2),
+    .currency-rub-value span:nth-child(2) {
+        margin-right: 10px !important;
+    }
+
+    .up {
+        right: 6px;
+    }
+
+    .currency-section h3 {
+        font-size: 22px;
+    }
+
+    .convertor-currency {
+        position: initial;
+        text-align: right;
+    }
+
+    .seperator {
+        position: initial;
+        margin-right: 20px;
+    }
+    .currency-sell, .currency-buy {
+        padding: 0.7rem !important;
     }
 }
