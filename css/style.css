@@ -2170,10 +2170,12 @@ header {
         bottom: 235px;
         right: 94px;
     }
+
     .btn-link-current {
         display: none;
         margin: 0 !important;
     }
+
     .credit-btn-link a {
         margin: 0;
         padding: 10px 143px !important;
@@ -2184,6 +2186,66 @@ header {
     }
 
     .current-calc {
+       margin-left: 20px;
+    }
+
+    .max-min-money,
+    .max-min-percent,
+    .max-min-month {
+        display: block;
+
+    }
+
+    .minumum-money,
+    .minumum-month,
+    .minumum-percent {
+        padding-right: 281px;
+    }
+
+    /* Suggestions */
+    .container-suggestions {
+        width: 100%;
+    }
+
+    .suggestion-cards {
+        padding: 0 15px;
+        text-align: left;
+        flex-direction: column;
+    }
+    .suggestion-card-1 {
+        margin-bottom: 20px;
+    }
+
+    .suggestion-card-1 img {
+        width: 315.5px;
+        max-width: inherit !important;
+    }
+    .suggestions h2 {
         margin-left: 20px;
+        font-size: 22px;
+    }
+    .suggestions {
+        position: initial;
+        top: 0;
+        
+    }
+    .suggestion-card-1-content p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .suggestion-card-1-content {
+        padding: 0;
+        width: 100%;
+    }
+    .suggestion-card-1-content {
+        top: -32px;
+        padding: 1px;
+        width: 313px;
+    }
+    .suggestion-card-1-content h4 {
+        font-size: 18px;
+    }
+    .suggestion-card-1-content a {
+        font-size: 13px;
     }
 }
