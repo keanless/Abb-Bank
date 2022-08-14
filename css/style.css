@@ -2036,7 +2036,7 @@ header {
     .navbar-hamburger-menu {
         display: block !important;
         width: 100vw;
-        height: calc(100% - 20px);
+        height: calc(100% - 130px);
         overflow-y: scroll;
         overflow-x: hidden;
         padding-bottom: 100px;
@@ -2053,6 +2053,9 @@ header {
         transition: all 0.5s !important;
         left: 0 !important;
         z-index: 99999 !important;
+    }
+    .accordion-menu {
+        padding-bottom: 50px !important;
     }
 
     .accordion-button {

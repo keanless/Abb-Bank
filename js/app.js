@@ -285,12 +285,15 @@ $('#percent-inp').on('change input', function (e) {
 let openHam = true;
 $("#hamburger-btn").on("click", () => {
     if (openHam) {
+        
         $("#hamburger-btn").addClass("is-active")
         $(".navbar-section-mobile").addClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").addClass("navbar-hamburger-menu-active")
-        // $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu")
+        $("body").css({"overflow":"hidden"}) 
     } else {
         $("#hamburger-btn").removeClass("is-active")
+        $("body").css({"overflow":"auto"}) 
+
         $(".navbar-section-mobile").removeClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu-active")
 
