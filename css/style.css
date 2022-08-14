@@ -2092,6 +2092,7 @@ header {
 
     /* Calculator Section */
     .all-calculator {
+        margin: 0 20px;
         display: inherit;
     }
 
@@ -2121,29 +2122,68 @@ header {
         right: -225px;
     }
 
-    .rangeslider__fill,
-    .rangeslider__fill__bg {
-        width: 333.902px !important;
-    }
 
     /* .rangeslider__handle {
         left: 315px !important;
     } */
 
     .rangeslider {
-        width: 345px !important;
+        width: 335px !important;
     }
 
     .credit-calculator {
-        padding-left: 10px;
         top: 0;
         position: relative;
         width: 100% !important;
+    }
+
+    .calculator-output {
+        display: block;
     }
 
     .max-min-money,
     .max-min-percent,
     .max-min-month {
         width: 100%;
+    }
+
+    .credit-calculator a {
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+        margin-left: 20px;
+    }
+
+    .calculator-money span:nth-child(1),
+    .calculator-month span:nth-child(1),
+    .calculator-percent span:nth-child(1) {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .monthly-payment,
+    .total-payment {
+        font-size: 26px;
+    }
+
+    .total-payment-section {
+        position: absolute;
+        bottom: 235px;
+        right: 94px;
+    }
+    .btn-link-current {
+        display: none;
+        margin: 0 !important;
+    }
+    .credit-btn-link a {
+        margin: 0;
+        padding: 10px 143px !important;
+    }
+
+    .credit-btn-link {
+        margin: 0;
+    }
+
+    .current-calc {
+        margin-left: 20px;
     }
 }
