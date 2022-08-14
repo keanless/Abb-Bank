@@ -1840,7 +1840,12 @@ header {
         padding-top: 20px;
         display: block !important;
     }
-
+    .navbar-section-mobile-active {
+        position: fixed;
+        z-index: 400;
+        width: 100%;
+        background-color: #fff
+    }
     /* .container-mobile {
         width: 350px;
         margin: 0 auto;
@@ -2028,25 +2033,24 @@ header {
     }
 
     /* Hamburger Section */
-
     .navbar-hamburger-menu {
-        display: none !important;
+        display: block !important;
         width: 100vw;
         height: calc(100% - 126px);
         overflow-y: scroll;
         overflow-x: hidden;
         padding-bottom: 100px;
-        /* position: fixed; */
+        position: fixed;
         background-color: #fff;
-        z-index: auto !important;
-        left: 400px !important;
-        transition: all 1s !important;
+        top: 140px;
+        z-index: 99999 !important;
+        left: 500px !important;
+        transition: all 0.5s !important;
     }
 
     .navbar-hamburger-menu-active {
-        display: none !important;
         padding-bottom: 20px;
-        transition: all 1s !important;
+        transition: all 0.5s !important;
         left: 0 !important;
         z-index: 99999 !important;
     }
@@ -2326,7 +2330,10 @@ header {
         position: initial;
         margin-right: 20px;
     }
-    .currency-sell, .currency-buy {
+
+    .currency-sell,
+    .currency-buy {
         padding: 0.7rem !important;
     }
+
 }

@@ -286,10 +286,12 @@ let openHam = true;
 $("#hamburger-btn").on("click", () => {
     if (openHam) {
         $("#hamburger-btn").addClass("is-active")
+        $(".navbar-section-mobile").addClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").addClass("navbar-hamburger-menu-active")
         // $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu")
     } else {
         $("#hamburger-btn").removeClass("is-active")
+        $(".navbar-section-mobile").removeClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu-active")
 
     }
@@ -314,3 +316,6 @@ $("#footer-lang-button").on("click", () => {
     }
     openFooter = !openFooter;
 });
+
+
+ 
