@@ -1840,16 +1840,26 @@ header {
         padding-top: 20px;
         display: block !important;
     }
+
     .navbar-section-mobile-active {
         position: fixed;
         z-index: 400;
         width: 100%;
         background-color: #fff
     }
+    .navbar-mobile-phone svg {
+        color: #666 !important;
+    }
     /* .container-mobile {
         width: 350px;
         margin: 0 auto;
     } */
+    .navbar-mobile-search {
+        padding-right: 20px;
+    }
+    .navbar-mobile-lang {
+        padding-right: 20px;
+    }
     .navbar-mobile-top {
         padding-right: 20px;
         padding-left: 20px;
@@ -2054,6 +2064,7 @@ header {
         left: 0 !important;
         z-index: 99999 !important;
     }
+
     .accordion-menu {
         padding-bottom: 50px !important;
     }
@@ -2267,6 +2278,7 @@ header {
 
 
     .currency-section {
+        padding-bottom: 60px !important;
         position: initial;
         padding: 0;
     }
@@ -2339,4 +2351,490 @@ header {
         padding: 0.7rem !important;
     }
 
+    /* Banner Section */
+
+    .banners-section {
+        display: none;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banners-section-mobile {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    .banner-1-mobile {
+        background: linear-gradient(90deg, #28B3F0 9.88%, #0A95D2 92.09%);
+        height: 175px !important;
+        margin-left: 0;
+        margin-right: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .banner-2-mobile {
+        background: linear-gradient(90deg, #6C96EA 9.88%, #4A76D2 92.09%);
+        height: 175px !important;
+        margin-left: 0;
+        margin-right: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .banner-inner-mobile {
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+
+    .banner-inner-mobile {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .banner-inner-content h4 {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #fff !important;
+        margin: 0 !important;
+        width: 90%;
+    }
+
+    .banner-inner-content {
+        padding-left: 1rem !important;
+        padding-top: 1.5rem !important;
+        padding-right: 0.5rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .banner-mobile-link {
+        position: absolute;
+        margin-bottom: 1.5rem !important;
+        bottom: 0;
+    }
+
+    .banner-mobile-link a {
+        display: inline-flex !important;
+        font-size: 13px !important;
+        font-weight: 500 !important;
+        transition: all .4s ease !important;
+        color: #fff;
+    }
+
+    .banner-mobile-image {
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+        padding-top: 1rem !important;
+        align-items: flex-end !important;
+        justify-content: flex-end !important;
+        position: relative;
+        width: 100%;
+        display: flex !important;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .banner-2-image-mobile {
+        margin-bottom: 35px;
+    }
+
+    .banner-mobile-figure {
+        height: 100%;
+        align-items: flex-end !important;
+        display: flex !important;
+        margin: 0 !important;
+    }
+
+    .banner-mobile-figure img {
+        max-width: 100%;
+        object-fit: contain;
+        border-style: none;
+        max-height: 100%;
+    }
+
+    .banners-container-mobile {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 55px !important;
+    }
+
+    .swiper-pagination-mobile .swiper-pagination-bullet-my {
+        background-color: #d8d8d8 !important
+    }
+
+    .swiper-pagination-bullet-my {
+        cursor: pointer;
+        height: 4px;
+        margin-right: 20px;
+        position: relative;
+        width: 35px;
+        z-index: 4;
+    }
+
+    .swiper-pagination-mobile .swiper-pagination-bullet-my-active {
+        background-color: #3b8ae0 !important;
+        cursor: pointer;
+        height: 4px;
+        margin-right: 20px;
+        position: relative;
+        width: 35px;
+        z-index: 4;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #3b8ae0 !important;
+    }
+
+    .swiper-pagination-mobile {
+        margin-top: 1.5rem !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .banner-mobile-link a::after {
+        background: url(../assets/icons/arrow-right-dark.svg) 100% no-repeat;
+        content: "";
+        height: inherit;
+        min-height: 16px;
+        padding-left: 18px;
+        transition: all .4s ease;
+        filter: invert(100%) sepia(93%) saturate(33%) hue-rotate(206deg) brightness(107%) contrast(100%);
+    }
+
+    .swiper-slide {
+        text-align: left;
+    }
+
+
+    /* News Cards */
+    .news-cards {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .news h2 {
+        margin-left: 10px;
+        font-size: 22px;
+    }
+
+    .news-section {
+        position: inherit;
+    }
+
+    .news-cards div {
+        margin: 0 !important;
+    }
+
+    .news h4 {
+        font-size: 16px;
+        line-height: 21px;
+        overflow: hidden;
+        padding: 0 !important;
+    }
+
+    .news-container {
+        width: 100%;
+    }
+
+    .partner-section {
+        position: inherit;
+    }
+
+    .partner-container {
+        width: 100%;
+    }
+
+    .partner {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .partner p {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 0;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .partner-link {
+        position: inherit;
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+
+    .partner-link a {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-top {
+        position: inherit;
+    }
+
+    .section-footer {
+        position: inherit;
+    }
+
+    .footer-top-mobile {
+        margin: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-top-mobile span {
+        color: #666;
+    }
+
+    .footer-bg-mobile {
+        background-color: #f9f9f9;
+    }
+
+
+
+    .breadcrumb a:after,
+    .breadcrumb li a:after {
+        color: #262626;
+        content: "/";
+        cursor: default;
+        font-size: 15px;
+        height: 20px;
+        padding: 0 10px;
+        width: 5px;
+
+    }
+
+    .breadcrumb a {
+        color: #262626 !important;
+        opacity: 0.5 !important;
+        font-weight: 600;
+    }
+
+    .footer-middle-mobile {
+        margin: 10px 10px !important;
+    }
+
+    .footer-phone-mobile {
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    .footer-phone-mobile svg {
+        color: #666;
+    }
+
+    .contact span {
+        display: block;
+        line-height: 21px;
+        margin-bottom: 0.5rem !important;
+        font-weight: 300;
+        color: #262626;
+    }
+
+    .contact {
+        margin: 20px;
+
+    }
+
+    .contact a {
+        display: block;
+        line-height: 21px;
+        margin-bottom: 0.5rem !important;
+        font-weight: 300;
+        color: #262626;
+    }
+
+    .icon {
+        background-image: url(https://abb-bank.az/img/icons/ig.svg);
+        height: 20px;
+        width: 20px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-fb {
+        background-image: url(https://abb-bank.az/img/icons/fb.svg);
+        height: 20px;
+        width: 20px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-youtube {
+        background-image: url(https://abb-bank.az/img/icons/youtube.svg);
+        height: 20px;
+        width: 20px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-twitter {
+        background-image: url(https://abb-bank.az/img/icons/twitter.svg);
+        height: 20px;
+        width: 20px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-linkedin {
+        background-image: url(https://abb-bank.az/img/icons/linkedin.svg);
+        height: 20px;
+        width: 20px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .mob-social a {
+        height: 48px;
+        width: 48px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        margin-right: 0.5rem !important;
+
+    }
+
+    .icon-app-store {
+        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+        height: 24px;
+        width: 24px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-app-store {
+        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+        height: 24px;
+        width: 24px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-play-store {
+        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+        height: 24px;
+        width: 24px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .icon-huawei {
+        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+        height: 24px;
+        width: 24px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .d-flex {
+        align-items: center;
+    }
+
+    .fs-9 {
+        font-size: 9px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .fs-14 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666666;
+    }
+
+    .h-26 {
+        height: 26px;
+    }
+
+    .footer-copyright {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer-copyright span {
+        font-size: 13px;
+        opacity: .5;
+        color: #262626;
+    }
+    .footer-mobile-logos {
+        padding: 0 15px;
+    }
 }

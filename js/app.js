@@ -321,4 +321,8 @@ $("#footer-lang-button").on("click", () => {
 });
 
 
- 
+var swiper = new Swiper(".swiper-mobile", {
+    pagination: {
+      el: ".swiper-pagination-mobile"
+    }
+  });
