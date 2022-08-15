@@ -1231,7 +1231,7 @@ header {
     width: 8px;
 }
 
-.currency-data tr {
+.currency-data span {
     font-size: 16px;
     text-align: left;
     font-weight: 300;
@@ -1843,8 +1843,30 @@ header {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+    .currency-data {
+        font-size: 15px;
+    }
     .navbar-section {
         display: none;
+    }
+    .search-bar-input input {
+        width: 100%;
+        padding: 0;
+        height: 75px;
+        font-size: 15px;
+    }
+    .search-bar-input {
+        width: 100%;
+        height: 75px;
+    }
+    .search-bar-section {
+        height: 75px;
+        width: 412px;
+        position: fixed;
+        left: 0;
+        top: 66px;
+        z-index: 4;
+        overflow: hidden;
     }
 
     .section-footer {
@@ -1853,6 +1875,9 @@ header {
 
     .footer-middle-mobile {
         display: block !important;
+    }
+    .suggestion-card-1 {
+        margin: 0 !important;
     }
 
     .banners-section-mobile {
@@ -2264,6 +2289,7 @@ header {
         padding: 0 15px;
         text-align: left;
         flex-direction: column;
+        align-items: center;
     }
 
     .suggestion-card-1 {
@@ -2351,11 +2377,14 @@ header {
     .currency-eur-value span:nth-child(1),
     .currency-rub-value span:nth-child(1) {
         margin: 0 !important;
-        font-size: 35px !important;
-        font-weight: 900 !important;
+        font-size: 25px !important ;
+        font-weight: 600 ;
         margin-right: 50px !important;
     }
-
+    .currency-sell,
+    .currency-buy {
+        width: 100% !important;
+    }
     .currency-usd-value span:nth-child(2),
     .currency-eur-value span:nth-child(2),
     .currency-rub-value span:nth-child(2) {
@@ -2382,7 +2411,8 @@ header {
 
     .currency-sell,
     .currency-buy {
-        padding: 0.7rem !important;
+        padding: 10px 2px  !important;
+        
     }
 
     /* Banner Section */
@@ -3191,7 +3221,7 @@ header {
     .calculator-money,
     .calculator-month,
     .calculator-percent {
-        width: 300px;
+        width: 96% !important;
         height: 100%;
         padding: 1rem;
     }
@@ -3200,13 +3230,14 @@ header {
     #percent-inp {
         top: -70px;
         width: 70px;
-        right: -186px;
+        right: -600px;
     }
 
     #month-inp {
         width: 30px;
         top: -68px;
-        right: -225px;
+        right: -638px;
+
     }
 
 
@@ -3279,7 +3310,7 @@ header {
     .max-min-money,
     .max-min-percent,
     .max-min-month {
-        display: block;
+        display: flex;
 
     }
 
@@ -3295,10 +3326,18 @@ header {
         margin: 0 auto;
     }
 
+    .container-suggestions h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+    }
+
     .suggestion-cards {
         padding: 0 15px;
         text-align: left;
         flex-direction: column;
+        align-items: center;
     }
 
     .suggestion-card-1 {
@@ -3417,6 +3456,7 @@ header {
 
     .currency-sell,
     .currency-buy {
+        width: 50%;
         padding: 0.7rem !important;
     }
 
@@ -3911,7 +3951,7 @@ header {
 
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (max-width:1280px) {
     .container-navbar {
         max-width: 1845px;
 

@@ -39,6 +39,40 @@ $(() => {
         }
         openSearch = !openSearch
     })
+    
+    let openSearchMobile = true;
+    $(".navbar-mobile-search").on("click", () => {
+        if (openSearchMobile) {
+            $(".search-bar-section").fadeIn("fast");
+
+            $("#search-span").css({
+                color: "#0056c1",
+            });
+            $(".bi-search").css({
+                color: "#0056c1"
+            })
+            console.log("sa");
+        } else {
+            $("#search-span").css({
+                color: "#666",
+            });
+            $(".bi-search").css({
+                color: "#666"
+            })
+            $(".search-bar-section").fadeOut();
+
+        }
+        openSearchMobile = !openSearchMobile
+    })
+    $(".search-bar-icon").on("click", () => {
+        $(".search-bar-section").fadeOut(100);
+        $("#search-span").css({
+            color: "#666",
+        });
+        $(".bi-search").css({
+            color: "#666"
+        })
+    });
 
     $(".search-bar-icon").on("click", () => {
         $("#search-bar-section").fadeOut(100);
