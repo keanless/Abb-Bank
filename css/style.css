@@ -8,6 +8,17 @@ body {
     font-family: "SF Pro Display", sans-serif !important;
 }
 
+
+#tooltip {
+    display: inline-block;
+    background: #ffffff;
+    color: #643045;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
 .container-navbar {
     max-width: 1440px;
     margin: 0 auto;
@@ -170,9 +181,22 @@ header {
 
 .en-flag,
 .ru-flag {
+    display: flex;
+
     padding: 15px;
     transition: all 0.3s;
 }
+
+.en-flag img,
+.ru-flag img {
+    object-fit: contain;
+}
+
+.en-flag span,
+.ru-flag span {
+    padding-left: 5px;
+}
+
 
 .en-flag:hover {
     background-color: #f6f7f8;
@@ -341,7 +365,7 @@ header {
     display: block;
     width: 100%;
     height: 3px;
-    bottom: -25px;
+    bottom: -30px;
     border-radius: 10px;
     left: 0;
     background-color: #0372e8;
@@ -630,6 +654,51 @@ header {
     align-items: center;
     right: 90px;
 }
+
+.icon-app-store {
+    background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon-app-store {
+    background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon-play-store {
+    background-image: url(https://abb-bank.az/img/icons/play-store.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon-huawei {
+    background-image: url(https://abb-bank.az/img/icons/huawei.svg);
+    filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
 
 .nav-bank-24-7-hover-2 span {
     width: 95%;
@@ -1002,16 +1071,17 @@ header {
 
 #money-inp,
 #percent-inp {
-    position: relative;
+    position: inherit;
     top: -73px;
-    right: -234px;
+    right: -230px;
+
     font-weight: 500 !important;
     font-size: 18px !important;
     color: #262626 !important;
 }
 
 #month-inp {
-    position: relative;
+    position: inherit;
     top: -73px;
     right: -230px;
     font-weight: 500 !important;
@@ -1063,7 +1133,7 @@ header {
     font-weight: 300;
     width: 493px;
     position: relative;
-    top: -40px;
+    top: -20px;
     display: flex;
     justify-content: space-between;
 }
@@ -1278,21 +1348,29 @@ header {
     border: 1px solid;
     border-color: #e4e4e4 !important;
     padding: 1rem !important;
-    padding-right: 170px !important;
 }
 
 .convertor-currency {
-    position: relative;
-    right: -130px;
+    padding: 10px;
+    border-left: 0.1px solid rgb(102 102 102 / 43%);
+    padding-left: 43px;
+    padding: 2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: initial;
     font-size: 20px;
-    text-overflow: ellipsis;
-    overflow: hidden;
     user-select: none;
     font-weight: 300;
 }
 
 .currency-sell {
     margin-bottom: 20px;
+}
+
+.currency-sell input,
+.currency-buy input {
+    padding: 10px;
+    padding-right: 60px;
 }
 
 .currency-convertor {
@@ -1789,6 +1867,10 @@ header {
     color: #262626;
 }
 
+.footer-logos img {
+    height: 26px;
+    object-fit: contain;
+}
 
 
 .footer-logos a {
@@ -1797,6 +1879,46 @@ header {
 
 .instagram {
     background-image: url(https://abb-bank.az/img/icons/ig.svg);
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.facebook {
+    background-image: url(https://abb-bank.az/img/icons/fb.svg);
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.youtube {
+    background-image: url(https://abb-bank.az/img/icons/youtube.svg);
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.linkedin {
+    background-image: url(https://abb-bank.az/img/icons/linkedin.svg);
+    height: 16px;
+    width: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.twitter {
+    background-image: url(https://abb-bank.az/img/icons/twitter.svg);
     height: 16px;
     width: 16px;
     background-position: 50%;
@@ -1843,26 +1965,46 @@ header {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+    .accordion-header {
+        margin: 0 !important;
+    }
+
+    .currency-sell input,
+    .currency-buy input {
+        padding: 10px;
+        padding-right: 0;
+    }
+
+    .search-bar-icon {
+        height: 32px;
+        width: 24px;
+    }
+
     .currency-data {
         font-size: 15px;
     }
+
     .navbar-section {
         display: none;
     }
+
     .search-bar-input input {
         width: 100%;
         padding: 0;
+        padding-left: 20px;
         height: 75px;
         font-size: 15px;
     }
+
     .search-bar-input {
         width: 100%;
         height: 75px;
     }
+
     .search-bar-section {
         height: 75px;
-        width: 412px;
-        position: fixed;
+        width: 100%;
+        position: absolute;
         left: 0;
         top: 66px;
         z-index: 4;
@@ -1876,6 +2018,7 @@ header {
     .footer-middle-mobile {
         display: block !important;
     }
+
     .suggestion-card-1 {
         margin: 0 !important;
     }
@@ -2133,7 +2276,8 @@ header {
         font-size: 18px !important;
         font-weight: 400 !important;
         color: #262626 !important;
-        padding: 0.5rem 1rem !important;
+        padding: 1rem 1rem !important;
+
         /* padding-left: 1.5rem !important; */
     }
 
@@ -2181,22 +2325,22 @@ header {
     .calculator-money,
     .calculator-month,
     .calculator-percent {
-        width: 300px;
+        width: 97%;
         height: 100%;
-        padding: 1rem;
+        padding: 0.9rem;
     }
 
     #money-inp,
     #percent-inp {
-        top: -70px;
+        top: -68px;
         width: 70px;
-        right: -186px;
+        right: -223px
     }
 
     #month-inp {
         width: 30px;
-        top: -68px;
-        right: -225px;
+        top: -66px;
+        right: -260px;
     }
 
 
@@ -2205,7 +2349,8 @@ header {
     } */
 
     .rangeslider {
-        width: 335px !important;
+        width: calc(100%+200px) !important;
+
     }
 
     .credit-calculator {
@@ -2254,8 +2399,9 @@ header {
     }
 
     .credit-btn-link a {
+        display: block;
         margin: 0;
-        padding: 10px 143px !important;
+        padding: 10px !important;
     }
 
     .credit-btn-link {
@@ -2269,27 +2415,28 @@ header {
     .max-min-money,
     .max-min-percent,
     .max-min-month {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     }
 
     .minumum-money,
     .minumum-month,
     .minumum-percent {
-        padding-right: 281px;
+        padding: 0;
     }
 
     /* Suggestions */
     .container-suggestions {
-        width: 81%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .suggestion-cards {
-        padding: 0 15px;
+        padding: 0;
         text-align: left;
         flex-direction: column;
-        align-items: center;
     }
 
     .suggestion-card-1 {
@@ -2302,7 +2449,6 @@ header {
     }
 
     .suggestions h2 {
-        margin-left: 20px;
         font-size: 22px;
     }
 
@@ -2377,14 +2523,18 @@ header {
     .currency-eur-value span:nth-child(1),
     .currency-rub-value span:nth-child(1) {
         margin: 0 !important;
-        font-size: 25px !important ;
-        font-weight: 600 ;
+        font-size: 25px !important;
+        font-weight: 600;
         margin-right: 50px !important;
     }
+
     .currency-sell,
     .currency-buy {
+        display: flex;
+        justify-content: space-between;
         width: 100% !important;
     }
+
     .currency-usd-value span:nth-child(2),
     .currency-eur-value span:nth-child(2),
     .currency-rub-value span:nth-child(2) {
@@ -2400,19 +2550,26 @@ header {
     }
 
     .convertor-currency {
+        padding: 10px;
+        border-left: 0.1px solid rgb(102 102 102 / 43%);
+        padding-left: 43px;
+        padding: 2;
+        padding-top: 5px;
+        padding-bottom: 5px;
         position: initial;
         text-align: right;
     }
 
     .seperator {
+        display: none;
         position: initial;
         margin-right: 20px;
     }
 
     .currency-sell,
     .currency-buy {
-        padding: 10px 2px  !important;
-        
+        padding: 10px 2px !important;
+
     }
 
     /* Banner Section */
@@ -2846,7 +3003,7 @@ header {
     }
 
     .icon-play-store {
-        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        background-image: url(https://abb-bank.az/img/icons/play-store.svg);
         filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
         height: 24px;
         width: 24px;
@@ -2857,7 +3014,7 @@ header {
     }
 
     .icon-huawei {
-        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        background-image: url(https://abb-bank.az/img/icons/huawei.svg);
         filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
         height: 24px;
         width: 24px;
@@ -2907,6 +3064,11 @@ header {
 
 
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .search-bar-icon {
+        height: 32px;
+        width: 24px;
+    }
+
     .navbar-section {
         display: none;
     }
@@ -3173,7 +3335,8 @@ header {
         font-size: 18px !important;
         font-weight: 400 !important;
         color: #262626 !important;
-        padding: 0.5rem 1rem !important;
+        padding: 1rem 1rem !important;
+
         /* padding-left: 1.5rem !important; */
     }
 
@@ -3246,7 +3409,8 @@ header {
     } */
 
     .rangeslider {
-        width: 335px !important;
+        width: calc(100%+200px) !important;
+
     }
 
     .credit-calculator {
@@ -3295,8 +3459,9 @@ header {
     }
 
     .credit-btn-link a {
+        display: block;
         margin: 0;
-        padding: 10px 143px !important;
+        padding: 10px 358px !important;
     }
 
     .credit-btn-link {
@@ -3322,22 +3487,18 @@ header {
 
     /* Suggestions */
     .container-suggestions {
-        width: 81%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .container-suggestions h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 2rem;
+        margin: 0;
     }
 
     .suggestion-cards {
-        padding: 0 15px;
+        padding: 0;
         text-align: left;
         flex-direction: column;
-        align-items: center;
     }
 
     .suggestion-card-1 {
@@ -3456,6 +3617,8 @@ header {
 
     .currency-sell,
     .currency-buy {
+        display: flex;
+        justify-content: space-between;
         width: 50%;
         padding: 0.7rem !important;
     }
@@ -3891,7 +4054,7 @@ header {
     }
 
     .icon-play-store {
-        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        background-image: url(https://abb-bank.az/img/icons/play-store.svg);
         filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
         height: 24px;
         width: 24px;
@@ -3902,7 +4065,7 @@ header {
     }
 
     .icon-huawei {
-        background-image: url(https://abb-bank.az/img/icons/app-store.svg);
+        background-image: url(https://abb-bank.az/img/icons/huawei.svg);
         filter: invert(63%) sepia(11%) saturate(0) hue-rotate(218deg) brightness(87%) contrast(100%);
         height: 24px;
         width: 24px;
@@ -3953,10 +4116,95 @@ header {
 
 @media only screen and (max-width:1280px) {
     .container-navbar {
-        max-width: 1845px;
+        padding: 0 30px;
+        max-width: 100%;
 
     }
+
+
     .banner-1::before {
         display: none;
+    }
+
+    .navbar-bottom {
+        padding: 10px 47px;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .container-navbar {
+        max-width: 100%;
+        padding: 0 40px;
+
+    }
+
+    .banner-1::before {
+        display: none;
+    }
+
+    .navbar-bottom {
+        padding: 10px 40px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+
+    #money-inp,
+    #percent-inp {
+        top: -68px;
+        width: 70px;
+        right: -190px
+    }
+
+    #month-inp {
+        width: 30px;
+        top: -66px;
+        right: -226px;
+    }
+}
+
+@media screen and (min-width:668px) and (max-width:700px) {
+
+    #money-inp,
+    #percent-inp {
+        top: -68px;
+        width: 70px;
+        right: -447px;
+    }
+
+    #month-inp {
+        width: 30px;
+        top: -66px;
+        right: -480px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .accordion-header {
+        margin: 0 !important;
+    }
+
+    .search-bar-input input {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+        height: 75px;
+        font-size: 15px;
+    }
+
+    .search-bar-input {
+        width: 100%;
+        height: 75px;
+    }
+
+    .search-bar-section {
+        height: 75px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 66px;
+        z-index: 4;
+        overflow: hidden;
     }
 }

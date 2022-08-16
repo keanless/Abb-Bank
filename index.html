@@ -36,6 +36,7 @@
 
 <body>
     <header>
+ 
         <!-- Mobile Section Navbar Top -->
         <section style="display: none;" class="navbar-section-mobile">
             <div class="container-mobile">
@@ -55,7 +56,7 @@
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </div>
-                        <div class="search-bar-section" >
+                        <div class="search-bar-section" style="display: none;">
                             <form action="" method="post" class="search-bar">
                                 <div class="search-bar-input">
                                     <input type="text" placeholder="Sizə necə kömək edə bilərik?">
@@ -489,7 +490,7 @@
                     </div>
                 </form>
             </div>
-           
+
             <div class="navbar-middle-bottom">
                 <div class="container-navbar">
                     <div class="navbar-middle">
@@ -833,7 +834,7 @@
                                 <a href=""> Daha ətraflı </a>
                             </div>
                             <div class="swiper-slide-image">
-                                <img src="./assets/imgs/abb-bankbanner-1.webp" alt=""  class="swiper-img-position">
+                                <img src="./assets/imgs/abb-bankbanner-1.webp" alt="" class="swiper-img-position">
                             </div>
                         </div>
                     </div>
@@ -848,7 +849,7 @@
                                 </h5>
                             </div>
                             <div class="swiper-slide-image">
-                                <img src="./assets/imgs/evim-logo-500x500.webp" alt=""  class="swiper-img-position">
+                                <img src="./assets/imgs/evim-logo-500x500.webp" alt="" class="swiper-img-position">
                             </div>
                         </div>
                     </div>
@@ -866,7 +867,7 @@
                                 <a href=""> Sifariş edin </a>
                             </div>
                             <div class="swiper-slide-image">
-                                <img src="./assets/imgs/frame-2.webp" alt=""  class="swiper-img-position">
+                                <img src="./assets/imgs/frame-2.webp" alt="" class="swiper-img-position">
                             </div>
                         </div>
                     </div>
@@ -898,7 +899,7 @@
                                 <a href=""> Sifariş edin </a>
                             </div>
                             <div class="swiper-slide-image">
-                                <img src="./assets/imgs/frame-3.webp" alt=""  class="swiper-img-position">
+                                <img src="./assets/imgs/frame-3.webp" alt="" class="swiper-img-position">
                             </div>
                         </div>
                     </div>
@@ -962,13 +963,14 @@
                     <div class="calculator-money">
                         <span>Kredit məbləği</span>
                         <div class="range-money-span">
-                            <span>AZN</span>
+                            <span>
+                        <input type="number" value="14" id="money-inp">
+                        AZN</span>
                         </div>
                     </div>
                     <div>
                         <input type="range" min="1" max="30000" value="5000" step="1" id="range-slider-money"
                             data-rangeslider-money>
-                        <input type="number" value="14" id="money-inp">
                     </div>
                     <label for="" class="max-min-money">
                         <span class="minumum-money">1</span>
@@ -979,11 +981,12 @@
                     <div class="calculator-month">
                         <span>Kredit müddəti</span>
                         <div class="range-month-span">
-                            <span>ay</span>
+                            <span>
+                    <input type="number" value="6" id="month-inp">
+                    ay</span>
                         </div>
                     </div>
                     <input type="range" min="1" max="54" value="6" id="range-slider-month" data-rangeslider-month>
-                    <input type="number" value="6" id="month-inp">
                     <label for="" class="max-min-month">
                         <span class="minumum-month">1 ay</span>
                         <span class="maximumum-month">54 ay</span>
@@ -994,11 +997,13 @@
                     <div class="calculator-percent">
                         <span>Faiz dərəcəsi</span>
                         <div class="range-percent-span">
-                            <span>%</span>
+                            <span>
+                                
+                    <input type="number" value="14" id="percent-inp">
+                    %</span>
                         </div>
                     </div>
                     <input type="range" min="14" max="27" value="14" id="range-slider-percent" data-rangeslider-percent>
-                    <input type="number" value="14" id="percent-inp">
                     <label for="" class="max-min-percent">
                         <span class="minumum-month">14 %</span>
                         <span class="maximumum-month">27 %</span>
@@ -1111,12 +1116,10 @@
                     <h4>Valyuta konvertoru</h4>
                     <div class="currency-sell">
                         <input type="number" placeholder="Satıram" id="sell">
-                        <span class="seperator"></span>
                         <span class="convertor-currency">USD</span>
                     </div>
                     <div class="currency-buy">
                         <input type="number" placeholder="Alıram" id="buy">
-                        <span class="seperator"></span>
                         <span class="convertor-currency">AZN</span>
                     </div>
                 </div>
@@ -1530,20 +1533,20 @@
                             <img src="https://abb-bank.az/img/logo-virtual-qarabag.png" alt="">
                         </a>
                         <a href="">
-                            <img src="https://abb-bank.az/img/logo-virtual-qarabag.png" alt="">
+                            <img src="https://abb-bank.az/img/yenilogo.png" alt="">
                         </a>
                         <a href="">
-                            <img src="https://abb-bank.az/img/logo-virtual-qarabag.png" alt="">
+                            <img src="https://abb-bank.az/img/logo-msp.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="footer-socials">
                     <div class="footer-social-logos">
                         <a href=""> <span class="instagram"></span></a>
-                        <a href=""> <span class="instagram"></span></a>
-                        <a href=""> <span class="instagram"></span></a>
-                        <a href=""> <span class="instagram"></span></a>
-                        <a href=""> <span class="instagram"></span></a>
+                        <a href=""> <span class="facebook"></span></a>
+                        <a href=""> <span class="youtube"></span></a>
+                        <a href=""> <span class="twitter"></span></a>
+                        <a href=""> <span class="linkedin"></span></a>
                     </div>
                     <div class="footer-lang">
                         <div class="navbar-lang">
@@ -1570,6 +1573,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="/js/rangeslider.js"></script>
     <script src="js/app.js"></script>
 </body>

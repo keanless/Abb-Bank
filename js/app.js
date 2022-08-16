@@ -15,6 +15,8 @@ $(() => {
         }
         open = !open;
     });
+
+
     /* Search Button */
     let openSearch = true;
     $("#navbar-search").on("click", () => {
@@ -39,7 +41,9 @@ $(() => {
         }
         openSearch = !openSearch
     })
-    
+
+
+
     let openSearchMobile = true;
     $(".navbar-mobile-search").on("click", () => {
         if (openSearchMobile) {
@@ -319,14 +323,18 @@ $('#percent-inp').on('change input', function (e) {
 let openHam = true;
 $("#hamburger-btn").on("click", () => {
     if (openHam) {
-        
+
         $("#hamburger-btn").addClass("is-active")
         $(".navbar-section-mobile").addClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").addClass("navbar-hamburger-menu-active")
-        $("body").css({"overflow":"hidden"}) 
+        $("body").css({
+            "overflow": "hidden"
+        })
     } else {
         $("#hamburger-btn").removeClass("is-active")
-        $("body").css({"overflow":"auto"}) 
+        $("body").css({
+            "overflow": "auto"
+        })
 
         $(".navbar-section-mobile").removeClass("navbar-section-mobile-active")
         $(".navbar-hamburger-menu").removeClass("navbar-hamburger-menu-active")
@@ -357,6 +365,6 @@ $("#footer-lang-button").on("click", () => {
 
 var swiper = new Swiper(".swiper-mobile", {
     pagination: {
-      el: ".swiper-pagination-mobile"
+        el: ".swiper-pagination-mobile"
     }
-  });
+});

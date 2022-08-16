@@ -3,7 +3,7 @@
     display: block;
     height: 25px;
     position: relative;
-    width: 500px;
+    width: calc(100%);
 }
 
 .rangeslider__fill,
